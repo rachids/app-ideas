@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec Converter</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-700">
+    <main class="flex flex-col items-center justify-center h-screen">
+        <section class="bg-indigo-800 text-gray-300 font-bold rounded-lg shadow-lg p-10 w-3/5">
+            <h1 class="text-4xl py-5">
+                Binary 2 Decimal Converter in Typescript
+            </h1>
+
+            <p class="py-5">
+                This is a small app based on the <a href="https://github.com/florinpop17/app-ideas" class="text-green-200 hover:text-green-500">florinpop17's app-ideas</a>
+                I've used to learn deno. This is my first one, hope you enjoy it (i don't know how one can enjoy some random converter but meh).
+            </p>
+
+            <input type="text" id="binaryInput" name="binary-input"
+                class="text-gray-800 border rounded-lg p-3 shadow-inner font-bold text-xl" placeholder="Type your value here"/>
+        
+            <label class="font-light flex-shrink">
+                <input type="radio" id="bin2dec" name="sens" checked />
+                Binary 2 Decimal
+            </label>
+            
+            <label class="font-light flex-shrink">
+                <input type="radio" id="dec2bin" name="sens" />
+                Decimal 2 Binary
+            </label>
+
+            <button type="button" id="convertBtn" class="bg-green-500 hover:bg-green-700 ml-8 p-3 rounded-lg font-bold text-xl border-r border-b hover:border-none">
+                Convert
+            </button>
+        </section>
+
+        <section id="sectionResult" class="invisible my-5 bg-green-700 text-white font-bold rounded-lg shadow-lg p-10 w-3/5">
+            <p>
+                Your converted value is:
+                <span id="resultSpan" class="text-blue-300 text-2xl px-5">test</span>
+            </p>
+        </section>
+    </main>
+    <script src="dist/app.js"></script>
+</body>
+</html>
