@@ -8,11 +8,10 @@ I have no idea how to not run `tsc` anytime I change my script.
 
 - Clone this repository
 - `cd` to the folder of the app
-- Run `tsc` to compile `app.ts`
+- Run `npm install` to get the dependencies.
+- Run `npx mix` to compile the scripts
 - Access the app in your browser.
 
 ## Todo:
 
 - Validate/sanitize the input.
-- Figure out a basic Typescript setup to simply compile to a single out file without using module AMD or weird stuff like that.
-- Keep trying until frontend is somewhat likable.
