@@ -1,5 +1,5 @@
-# BuRP
-B_u_rder Radius Previewer is an app that lets you preview a border-radius effect on an element and offers a way to quickly copy the code.
+# BoRP
+Border Radius Previewer is an app that lets you preview a border-radius effect on an element and offers a way to quickly copy the code.
 
 ## How to use
 - Clone this repository
@@ -11,3 +11,4 @@ B_u_rder Radius Previewer is an app that lets you preview a border-radius effect
 ## TODO
 
 - UI could be a bit improved, especially the four inputs
+- Dynamically set the property's value inside the Radius class
