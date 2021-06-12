@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuRP : Burder Radius Previewer</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="flex w-screen h-screen">
+        <section class="bg-black text-white p-5 max-w-md shadow-md flex flex-col">
+            <h1 class="text-4xl py-5">BuRP</h1>
+            <p class="py-3">
+                This little app will curve your elements like there's no tomorrow.
+            </p>
+
+            <p class="flex-1">
+                Simply play with the values inside the preview div and grab a fresh copy of the lines needed to give your element a new look.
+            </p>
+
+            <p class="self-end text-sm">
+                by <a href="https://www.rachids.ca" class="text-blue-200 hover:underline">rachids</a> -
+                Check the source at <a href="https://github.com/rachids/app-ideas" class="text-blue-200 hover:underline">Github</a>
+            </p>
+        </section>
+        <section class="flex-1 p-5 my-auto">
+            <div id="preview" class="border border-black max-w-md mx-auto flex flex-wrap justify-between p-5">
+                <input id="border-top-left" data-name="top-left" type="number" step="1" min="0" value="0" class="w-sm" />
+                <input id="border-top-right" data-name="top-right" type="number" step="1" min="0" value="0" class="w-sm text-right self-end"/>
+                <input id="border-bottom-left" data-name="bottom-left" type="number" step="1" min="0" value="0" class="w-sm" />
+                <input id="border-bottom-right" data-name="bottom-right" type="number" step="1" min="0" value="0" class="w-sm text-right"/>
+            </div>
+
+            <div id="code-box" class="mt-10 p-2 pl-8 bg-indigo-200 font-mono max-w-md mx-auto cursor-pointer transition-colors duration-500 hover:bg-green-200 flex flex-col relative">
+                <div class="absolute top-2 right-2 text-right px-2 bg-gray-900 text-xs text-white rounded-full">CLICK TO COPY</div>
+                <span id="code-box-value">border-radius: 0;</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
