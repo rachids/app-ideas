@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="dist/app.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900">
     <main class="flex flex-col items-center justify-center h-screen">
@@ -16,32 +16,34 @@
             </h1>
 
             <div class="mr-10 mb-10 h-14 bg-black">
-                <span id="screenValue" class="border-b-8 border-yellow-200 p-2 block w-full text-right text-yellow-300 font-mono text-4xl">0</span>
+                <span id="lcd-screen">0</span>
             </div>
 
-            <div class="flex h-72 mr-10 gap-2">
-                <div class="rounded-md bg-gray-900 w-1/4 h-1/4 flex flex-col justify-center items-center text-4xl">
-                    9
-                </div>
-                <div class="rounded-md bg-gray-900 w-1/4 h-1/4 flex flex-col justify-center items-center text-4xl">
-                    8
-                </div>
-                <div class="rounded-md bg-gray-900 w-1/4 h-1/4 flex flex-col justify-center items-center text-4xl">
-                    7
-                </div>
-                <div class="rounded-md bg-red-900 w-1/4 h-1/4 flex flex-col justify-center items-center text-4xl">
-                    AC
-                </div>
+            <div class="grid grid-cols-5 gap-2 h-72 pr-10 mb-10">
+                <span class="calculator-btn">9</span>
+                <span class="calculator-btn">8</span>
+                <span class="calculator-btn">7</span>
+
+                <span id="c-btn">C</span>
+                <span id="ac-btn">AC</span>
+
+                <span class="calculator-btn">4</span>
+                <span class="calculator-btn">5</span>
+                <span class="calculator-btn">6</span>
+
+                <span class="operator-btn">+</span>
+                <span class="operator-btn">-</span>
+
+                <span class="calculator-btn">1</span>
+                <span class="calculator-btn">2</span>
+                <span class="calculator-btn">3</span>
+
+                <span class="operator-btn">/</span>
+                <span class="operator-btn">=</span>
+
+                <span class="col-start-2 calculator-btn">0</span>
             </div>
             
-        </section>
-    
-        <section id="sectionResult"
-            class="invisible my-5 bg-green-700 text-white font-bold rounded-lg shadow-lg p-10 w-3/5">
-            <p>
-                Your converted value is:
-                <span id="resultSpan" class="text-blue-300 text-2xl px-5">test</span>
-            </p>
         </section>
     </main>
     <script src="dist/app.js"></script>

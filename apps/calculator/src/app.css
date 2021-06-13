@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#lcd-screen {
+    @apply border-b-8 border-yellow-200 p-2 block w-full text-right text-yellow-300 font-mono text-4xl;
+}
+
+.calculator-btn {
+    @apply rounded-md bg-gray-900 w-full flex flex-col justify-center items-center text-4xl;
+}
+
+.operator-btn {
+    @apply rounded-md bg-gray-900 w-full text-yellow-100 flex flex-col justify-center items-center text-xl;
+}
+
+#c-btn {
+    @apply rounded-md bg-gray-800 w-full flex flex-col justify-center items-center text-2xl;
+}
+#ac-btn {
+    @apply rounded-md bg-red-900 w-full flex flex-col justify-center items-center text-2xl;
+}
