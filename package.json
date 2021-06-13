@@ -1,7 +1,7 @@
 {
-    "name": "burp-css",
+    "name": "apps-ideas",
     "version": "1.0.0",
-    "description": "Preview boder-radius CSS and copy the code.",
+    "description": "Using florinpop17/app-ideas to explore frontend development",
     "main": "app.js",
     "scripts": {
         "build": "npx mix --production",
