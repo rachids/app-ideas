@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="dist/app.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <main class="flex flex-col items-center justify-center h-screen">
+
+        <section class="bg-gray-700 text-gray-300 font-bold rounded-lg shadow-lg w-96 pl-10">
+            <h1 class="text-md pt-1 italic text-yellow-100">
+                calculator
+            </h1>
+
+            <div class="mr-10 mb-10 h-14 bg-black">
+                <span id="lcd-screen">0</span>
+            </div>
+
+            <div class="grid grid-cols-5 gap-2 h-72 pr-10 mb-10">
+                <span class="calculator-btn">9</span>
+                <span class="calculator-btn">8</span>
+                <span class="calculator-btn">7</span>
+
+                <span id="c-btn">C</span>
+                <span id="ac-btn">AC</span>
+
+                <span class="calculator-btn">4</span>
+                <span class="calculator-btn">5</span>
+                <span class="calculator-btn">6</span>
+
+                <span class="operator-btn">+</span>
+                <span class="operator-btn">-</span>
+
+                <span class="calculator-btn">1</span>
+                <span class="calculator-btn">2</span>
+                <span class="calculator-btn">3</span>
+
+                <span class="operator-btn">/</span>
+                <span class="operator-btn">=</span>
+
+                <span class="col-start-2 calculator-btn">0</span>
+            </div>
+            
+        </section>
+    </main>
+
+    <p class="absolute bottom-0 text-center w-full text-gray-200">
+        by <a href="https://www.rachids.ca" class="text-blue-200 hover:underline">rachids</a> -
+        Check the source at <a href="https://github.com/rachids/app-ideas" class="text-blue-200 hover:underline">Github</a>
+    </p>
+    <script src="dist/app.js"></script>
+</body>
+</html>
